@@ -1,0 +1,56 @@
+/*Stylesheet for FESC redesign.  Version 1.0 Date 4/14/18*/
+* {
+  font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+/*  TO DO: BODY STYLING */
+}
+
+.main-wrapper {
+/*  TO DO: MAIN WRAPPER STYLING*/
+  display: flex;
+  flex-flow: row wrap;
+  
+}
+
+.top-info{
+/*  TO DO: TOP INFO STYLING*/
+  padding: 2% 0 0 2%;
+}
+
+#logo {
+  max-width: 35%;
+}
+
+#top-nav {
+/*  TO DO: TOP NAV STYLING */
+  min-width: 100%;
+  background-color: #ECDC00;
+}
+
+#top-nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+#top-nav a{
+  text-decoration: none;
+  font-family: cursive;
+}
+
+#top-nav li{
+  display: inline;
+  text-decoration: none;
+  padding: 0 20% 0 20%;
+}
+
+
+
+footer {
+/*  TO DO: FOOTER STYLING */
+}
