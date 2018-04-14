@@ -28,9 +28,9 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
      inkscape:cx="486.83575"
-     inkscape:cy="455.65122"
+     inkscape:cy="741.36551"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g4184-6-9"
      showgrid="false"
      units="px"
      inkscape:window-width="1877"
@@ -303,6 +303,57 @@
            id="tspan4405-4"
            x="270.14487"
            y="-56.102604">Large Headline Goes Here</tspan></text>
+    </g>
+    <g
+       id="g4184-6-9"
+       transform="matrix(1.8725233,0,0,3.2511172,-460.46652,937.06346)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:15.21967602px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="204.28154"
+         y="-100.43578"
+         id="text4403-6-1"
+         sodipodi:linespacing="125%"
+         transform="scale(1.3356006,0.74872684)"><tspan
+           sodipodi:role="line"
+           id="tspan4405-4-4"
+           x="204.28154"
+           y="-100.43578">Blog Post</tspan></text>
+      <rect
+         style="opacity:1;fill:#ffcc00;fill-opacity:0;stroke:#8ba0d8;stroke-width:0.36053106;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect4406"
+         width="557.74811"
+         height="66.40519"
+         x="260.37277"
+         y="-89.35511" />
+      <rect
+         style="opacity:1;fill:#ffcc00;fill-opacity:0;stroke:#8ba0d8;stroke-width:0.58084762;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect4406-8"
+         width="557.4577"
+         height="172.4516"
+         x="259.3736"
+         y="-273.54205" />
+      <rect
+         style="opacity:1;fill:#ffcc00;fill-opacity:0;stroke:#8ba0d8;stroke-width:0.1684586;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect4406-4"
+         width="168.06921"
+         height="48.111946"
+         x="260.66949"
+         y="-17.592661" />
+      <rect
+         style="opacity:1;fill:#ffcc00;fill-opacity:0;stroke:#8ba0d8;stroke-width:0.1740897;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect4406-4-8"
+         width="179.50912"
+         height="48.107677"
+         x="455.97702"
+         y="-17.151117" />
+      <rect
+         style="opacity:1;fill:#ffcc00;fill-opacity:0;stroke:#8ba0d8;stroke-width:0.16576503;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect4406-4-0"
+         width="162.73061"
+         height="48.113991"
+         x="655.09436"
+         y="-18.033092" />
     </g>
   </g>
 </svg>
