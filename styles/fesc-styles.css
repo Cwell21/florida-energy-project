@@ -21,11 +21,11 @@ body {
 .top-info{
 /*  TO DO: TOP INFO STYLING*/
     
-  padding: 2% 0 0 2%;
+  padding: 1% 0 0 2%;
 }
 
 #logo {
-  max-width: 35%;
+  max-width: 50%;
 }
 
 #top-nav {
