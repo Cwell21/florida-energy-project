@@ -1,4 +1,14 @@
 /*Stylesheet for FESC redesign.  Version 1.0 Date 4/14/18*/
+
+
+/*****************************************
+* Google Font Code for styling           *
+*                                        * 
+*  font-family: 'Courgette', cursive;    *
+*  font-family: 'Concert One', cursive;  *
+**************************************** */
+
+
 * {
   font-size: 1rem;
 }
@@ -30,6 +40,8 @@ body {
 
 #top-nav {
 /*  TO DO: TOP NAV STYLING */
+  display:flex;
+  flex-flow: row-reverse;
   min-width: 100%;
   min-height: 50px;
   background-color: #ECDC00;
@@ -39,11 +51,13 @@ body {
 #top-nav ul {
   display: flex;
   flex-flow: row-reverse;
+  margin-right: 2%;
 }
 
 #top-nav a{
   text-decoration: none;
-  font-family: cursive;
+  font-family: 'Concert One', cursive;
+  color: rgb(0,0,0);
 }
 
 #top-nav li{
@@ -51,7 +65,15 @@ body {
   height: 10px;
   text-decoration: none;
   padding: 0 2% 3% 2%;
+  margin: 0 50% 0 50%;
   font-size: 1.5rem;
+}
+
+#tag-line{
+  padding-top: .75%; 
+  padding-right: 2%;
+  font-family: 'Courgette', cursive;
+  color: rgb(255,255,255);
 }
 
 
