@@ -9,6 +9,13 @@
 **************************************** */
 
 
+
+/*********************************************
+
+  BASE STYLING
+    
+**********************************************/
+
 * {
   font-size: 1rem;
 }
@@ -21,6 +28,15 @@ body {
 /*  TO DO: BODY STYLING */
 }
 
+/*********************************************
+
+  CONTENT WRAPPERS
+    MAIN (USED TO WRAP ENTIRE SITE)
+    CONTAINER ROW (USED TO WRAP SECTIONS DISPLAYED AS ROW)
+    CONTAINER COLUMN (USED TO WRAP SECTIONS DISPLAYED AS COLUMNS)
+
+**********************************************/
+
 .main-wrapper {
 /*  TO DO: MAIN WRAPPER STYLING*/
   display: flex;
@@ -28,11 +44,22 @@ body {
   
 }
 
-.top-info{
-/*  TO DO: TOP INFO STYLING*/
-    
-  padding: 1% 0 0 2%;
+.container-row{
+/*  STYLING - MAIN CONTAINER FOR ROWS (USED TO SECTION OFF AREA OF SITE*/
+  display: flex;
+  flex-flow: row wrap;
+  min-width: 100%;
 }
+
+.container-row-33 {
+  max-width: 33%;
+}
+
+/*********************************************
+
+  ID ELEMENT STYLING
+
+**********************************************/
 
 #logo {
   max-width: 50%;
@@ -76,7 +103,19 @@ body {
   color: rgb(255,255,255);
 }
 
+/*********************************************
 
+  CLASS ELEMENT STYLING
+
+**********************************************/
+
+
+
+/*********************************************
+
+  ELEMENT STYLING
+
+**********************************************/
 
 footer {
 /*  TO DO: FOOTER STYLING */
