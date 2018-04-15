@@ -55,6 +55,9 @@ body {
   max-width: 33%;
 }
 
+.container-row-66 {
+  max-width: 66%;
+}
 /*********************************************
 
   ID ELEMENT STYLING
@@ -65,6 +68,9 @@ body {
   max-width: 50%;
 }
 
+#socialArea{
+  float: right;
+}
 #top-nav {
 /*  TO DO: TOP NAV STYLING */
   display:flex;
