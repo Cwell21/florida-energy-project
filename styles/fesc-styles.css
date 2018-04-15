@@ -31,14 +31,16 @@ body {
 #top-nav {
 /*  TO DO: TOP NAV STYLING */
   min-width: 100%;
+  min-height: 50px;
   background-color: #ECDC00;
+  margin-top: 1%;
 }
 
 #top-nav ul {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-flow: row-reverse;
 }
+
 #top-nav a{
   text-decoration: none;
   font-family: cursive;
@@ -46,8 +48,10 @@ body {
 
 #top-nav li{
   display: inline;
+  height: 10px;
   text-decoration: none;
-  padding: 0 20% 0 20%;
+  padding: 0 2% 3% 2%;
+  font-size: 1.5rem;
 }
 
 
