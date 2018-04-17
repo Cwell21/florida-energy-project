@@ -69,12 +69,12 @@ body {
 }
 
 #socialArea{
-  float: right;
+  
 }
 #top-nav {
 /*  TO DO: TOP NAV STYLING */
   display:flex;
-  flex-flow: row-reverse;
+  flex-flow: row-reverse wrap;
   min-width: 100%;
   min-height: 50px;
   background-color: #ECDC00;
@@ -83,7 +83,7 @@ body {
 
 #top-nav ul {
   display: flex;
-  flex-flow: row-reverse;
+  flex-flow: row-reverse wrap;
   margin-right: 2%;
 }
 
@@ -103,8 +103,9 @@ body {
 }
 
 #tag-line{
-  padding-top: .75%; 
-  padding-right: 2%;
+  font-size: 100%;
+  padding-top: .25%; 
+  padding-right: 20%;
   font-family: 'Courgette', cursive;
   color: rgb(255,255,255);
 }
