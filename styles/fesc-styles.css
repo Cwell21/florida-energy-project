@@ -18,6 +18,7 @@
 
 * {
   font-size: 1rem;
+  box-sizing: border-box;
 }
 
 img {
@@ -126,4 +127,19 @@ body {
 
 footer {
 /*  TO DO: FOOTER STYLING */
+}
+
+/*********************************************
+
+ MEDIA QUERIES
+
+**********************************************/
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  #top-nav li, #tag-line {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
 }
