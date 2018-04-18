@@ -1,6 +1,7 @@
 /*Stylesheet for FESC redesign.  Version 1.0 Date 4/14/18*/
 * {
   font-size: 1rem;
+  box-sizing: border-box;
 }
 
 img {
