@@ -13,18 +13,40 @@ img {
 
 /********* LAYOUT STYLING ***************/
 /********* HEADER STYLING ***************/
-.header {
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .banner #logo {
+    min-width: 23%;
+    margin: 0; }
+  .banner #search {
+    min-width: 50%;
+    background-color: red; }
+  .banner #social-links {
+    min-width: 5%;
+    background-color: blue; }
+
+.header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: #ec6600;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
-      -ms-flex-flow: row-reverse nowrap;
-          flex-flow: row-reverse nowrap;
+      -ms-flex-flow: row-reverse wrap;
+          flex-flow: row-reverse wrap;
   -ms-flex-line-pack: end;
       align-content: flex-end;
-  margin-top: 1%; }
+  margin: 1% 0 1% 0; }
 
 #top-nav {
   min-width: 60%; }

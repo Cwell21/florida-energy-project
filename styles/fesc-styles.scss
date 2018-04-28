@@ -34,12 +34,39 @@ body {
 
 /********* HEADER STYLING ***************/
 
-.header {
+.banner {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  
+  
+  #logo {
+    min-width: 23%;
+    margin: 0;
+    
+  }
+  #search{
+    min-width: 50%; 
+    background-color: red;
+    
+  }
+  
+  #social-links{
+    min-width: 5%;
+    background-color: blue;
+    
+  }
+
+}
+
+
+.header-nav {
   display: flex;
   background-color: $banner-color;
-  flex-flow: row-reverse nowrap;
+  flex-flow: row-reverse wrap;
   align-content: flex-end;
-  margin-top: 1%;
+  margin: 1% 0 1% 0;
 }
 
 #logo {
