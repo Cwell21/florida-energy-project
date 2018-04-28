@@ -10,6 +10,7 @@ $nav-hover-color: rgb(0,0,0);
 
 //Font Types
 $nav-link-font: Concert One, cursive;
+$fesc-brand: cursive;
 
 
 /********** UNIVERSAL STYLES ************/
@@ -21,16 +22,15 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
 img {
   max-width: 100%;
 }
-
 body {
   background-color: rgb(55,55,55);
 }
 .main-wrapper {
   background-color: rgb(255,255,255);
+  padding-top: 1%;
 }
 /********* LAYOUT STYLING ***************/
 
@@ -46,9 +46,9 @@ body {
   
   #logo {
     min-width: 23%;
-    margin: 0;
-    
+    margin: 0 1%;    
   }
+  
   #search{
     display: flex;
     justify-content: center;
@@ -80,7 +80,6 @@ body {
   }
 
 }
-
 .header-nav {
   display: flex;
   background-color: $banner-color;
@@ -88,12 +87,10 @@ body {
   justify-content: space-around;
   margin: 1% 0 1% 0;
 }
-
 #logo {
   
   
 }
-
 #top-nav {
   
   min-width: 50%;
@@ -119,7 +116,6 @@ body {
     font-size: 1.5rem;
   }
 }
-
 #tag-line {
 
   color: $nav-color;
@@ -131,7 +127,29 @@ body {
 
 /********* MAIN CONTENT STYLING *********/
 
+span {
+    font-family: cursive;
+    color: $banner-color;
+  }
+/********* MODULE CONTENT STYLING *******/
 
+.module-row {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1% 5%;
+  background-color: rgb(225,225,225);
+  justify-content: space-around;
+  text-align: center;
+  
+  .module {
+    width: 30%;
+    background-color: rgb(215,215,215);
+  }
+  
+  h1 {
+    font-family: Oxygen, sans-serif;
+  }
+}
 /********* FOOTER STYLING ***************/
 
 footer {
