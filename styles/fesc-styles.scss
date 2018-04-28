@@ -27,7 +27,10 @@ img {
 }
 
 body {
-  
+  background-color: rgb(55,55,55);
+}
+.main-wrapper {
+  background-color: rgb(255,255,255);
 }
 /********* LAYOUT STYLING ***************/
 
@@ -78,12 +81,11 @@ body {
 
 }
 
-
 .header-nav {
   display: flex;
   background-color: $banner-color;
   flex-flow: row-reverse wrap;
-  align-content: flex-end;
+  justify-content: space-around;
   margin: 1% 0 1% 0;
 }
 
@@ -94,30 +96,52 @@ body {
 
 #top-nav {
   
-  min-width: 60%;
+  min-width: 50%;
+  
   
   ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
     list-style: none;
   }
   
   li {
-    display: inline-block;
+    display: flex;
+    flex-flow: row wrap;    
   }
   
   a { 
     display: block;
     text-decoration: none;
     color: $nav-color;
+    font-family: $nav-link-font, cursive;
+    font-size: 1.5rem;
   }
 }
 
 #tag-line {
-  
+
   color: $nav-color;
-  font-family: Courgette, cursive;
+  font-family: Courgette, cursive;  
+  text-align: left;
+  margin: 1%;
+  padding: 0 1%;
 }
 
 /********* MAIN CONTENT STYLING *********/
 
 
 /********* FOOTER STYLING ***************/
+
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: $banner-color;
+  
+  section {
+    width: 33%;
+    padding: 2% 5% 1% 5%;
+  }
+  
+}

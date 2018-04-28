@@ -11,6 +11,12 @@ html {
 img {
   max-width: 100%; }
 
+body {
+  background-color: #373737; }
+
+.main-wrapper {
+  background-color: white; }
+
 /********* LAYOUT STYLING ***************/
 /********* HEADER STYLING ***************/
 .banner {
@@ -67,26 +73,58 @@ img {
   -webkit-box-direction: reverse;
       -ms-flex-flow: row-reverse wrap;
           flex-flow: row-reverse wrap;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 1% 0 1% 0; }
 
 #top-nav {
-  min-width: 60%; }
+  min-width: 50%; }
   #top-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     list-style: none; }
   #top-nav li {
-    display: inline-block; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap; }
   #top-nav a {
     display: block;
     text-decoration: none;
-    color: white; }
+    color: white;
+    font-family: Concert One, cursive, cursive;
+    font-size: 1.5rem; }
 
 #tag-line {
   color: white;
-  font-family: Courgette, cursive; }
+  font-family: Courgette, cursive;
+  text-align: left;
+  margin: 1%;
+  padding: 0 1%; }
 
 /********* MAIN CONTENT STYLING *********/
 /********* FOOTER STYLING ***************/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  background-color: #ec6600; }
+  footer section {
+    width: 33%;
+    padding: 2% 5% 1% 5%; }
 
 /*# sourceMappingURL=fesc-styles.css.map */
