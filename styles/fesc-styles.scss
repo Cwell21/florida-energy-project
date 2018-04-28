@@ -47,8 +47,21 @@ body {
     
   }
   #search{
+    display: flex;
+    justify-content: center;
     min-width: 50%; 
-    background-color: red;
+    
+    
+    input {
+      margin-top: 10%;
+      height: 30px;
+      width: 500px;
+    }
+    button {
+      margin-top: 10%;
+      height: 30px;
+      width: 10;
+    }
     
   }
   
