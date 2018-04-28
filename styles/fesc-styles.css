@@ -55,14 +55,16 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    max-width: 5%;
-    margin-right: 2%;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-width: 15%;
+    margin-right: 1%;
+    padding-top: 5%;
     color: #ec6600; }
 
 .header-nav {
@@ -118,6 +120,16 @@ span {
   font-family: cursive;
   color: #ec6600; }
 
+.main-content figure {
+  padding: 0;
+  float: left; }
+.main-content h2 {
+  font-size: 2rem; }
+.main-content article {
+  font-size: 1.25rem; }
+.main-content ol {
+  clear: both; }
+
 /********* MODULE CONTENT STYLING *******/
 .module-row {
   display: -webkit-box;
@@ -137,6 +149,19 @@ span {
     background-color: #d7d7d7; }
   .module-row h1 {
     font-family: Oxygen, sans-serif; }
+
+#partUniv {
+  background-color: #e1e1e1;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  #partUniv ul {
+    width: 500px;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around; }
+  #partUniv li {
+    display: inline;
+    text-decoration: none;
+    width: 100%; }
 
 /********* FOOTER STYLING ***************/
 footer {

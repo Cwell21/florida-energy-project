@@ -69,12 +69,12 @@ body {
   }
   
   #social-links{
-    
     display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    max-width: 5%;
-    margin-right: 2%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    min-width: 15%;
+    margin-right: 1%;
+    padding-top: 5%;
     color: $banner-color; 
     
   }
@@ -131,6 +131,22 @@ span {
     font-family: cursive;
     color: $banner-color;
   }
+.main-content {
+  figure {
+    padding: 0;
+    float: left;
+  }
+  h2 {    
+    font-size: 2rem;
+  }
+  article {
+    font-size: 1.25rem;
+  }
+  ol {
+    clear: both;
+  }
+
+}
 /********* MODULE CONTENT STYLING *******/
 
 .module-row {
@@ -148,6 +164,20 @@ span {
   
   h1 {
     font-family: Oxygen, sans-serif;
+  }
+}
+#partUniv{
+  background-color: rgb(225,225,225);
+  justify-content: space-around;
+  ul {
+    width: 500px;
+    align-content: space-around;
+  }
+  li {
+    display: inline;
+    text-decoration: none;
+    width: 100%;
+    
   }
 }
 /********* FOOTER STYLING ***************/
