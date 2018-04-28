@@ -45,8 +45,18 @@ img {
       height: 30px;
       width: 10; }
   .banner #social-links {
-    min-width: 5%;
-    background-color: blue; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    max-width: 5%;
+    margin-right: 2%;
+    color: #ec6600; }
 
 .header-nav {
   display: -webkit-box;

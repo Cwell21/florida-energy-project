@@ -66,8 +66,13 @@ body {
   }
   
   #social-links{
-    min-width: 5%;
-    background-color: blue;
+    
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    max-width: 5%;
+    margin-right: 2%;
+    color: $banner-color; 
     
   }
 
