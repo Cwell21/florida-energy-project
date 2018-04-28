@@ -1,0 +1,29 @@
+// SCSS style sheet for FESC project
+
+//SCSS color variables
+$banner-color: rgb(236,102,0);
+$border-color: rgb(0,236,220);
+
+//Font color variable
+$nav-color: rgb(255,255,255);
+$nav-hover-color: rgb(0,0,0);
+
+//Font Types
+$nav-link-font: Concert One, cursive;
+
+
+html {
+  box-sizing: border-box;
+  font-size: 1rem;  
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  
+}

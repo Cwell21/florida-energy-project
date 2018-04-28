@@ -1,3 +1,13 @@
-/*Stylesheet for FESC redesign.  Version 1.0 Date 4/14/18*/
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1rem; }
 
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
 
+img {
+  max-width: 100%; }
+
+/*# sourceMappingURL=fesc-styles.css.map */
