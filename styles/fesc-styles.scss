@@ -1,0 +1,165 @@
+// SCSS style sheet for FESC project
+
+//SCSS color variables
+$banner-color: rgb(236,102,0);
+$border-color: rgb(0,236,220);
+
+//Font color variable
+$nav-color: rgb(255,255,255);
+$nav-hover-color: rgb(0,0,0);
+
+//Font Types
+$nav-link-font: Concert One, cursive;
+$fesc-brand: cursive;
+
+
+/********** UNIVERSAL STYLES ************/
+
+html {
+  box-sizing: border-box;
+  font-size: 1rem;  
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+img {
+  max-width: 100%;
+}
+body {
+  background-color: rgb(55,55,55);
+}
+.main-wrapper {
+  background-color: rgb(255,255,255);
+  padding-top: 1%;
+}
+/********* LAYOUT STYLING ***************/
+
+
+/********* HEADER STYLING ***************/
+
+.banner {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  
+  
+  #logo {
+    min-width: 23%;
+    margin: 0 1%;    
+  }
+  
+  #search{
+    display: flex;
+    justify-content: center;
+    min-width: 50%; 
+    
+    
+    input {
+      margin-top: 10%;
+      height: 30px;
+      width: 500px;
+    }
+    button {
+      margin-top: 10%;
+      height: 30px;
+      width: 10;
+    }
+    
+  }
+  
+  #social-links{
+    
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    max-width: 5%;
+    margin-right: 2%;
+    color: $banner-color; 
+    
+  }
+
+}
+.header-nav {
+  display: flex;
+  background-color: $banner-color;
+  flex-flow: row-reverse wrap;
+  justify-content: space-around;
+  margin: 1% 0 1% 0;
+}
+#logo {
+  
+  
+}
+#top-nav {
+  
+  min-width: 50%;
+  
+  
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style: none;
+  }
+  
+  li {
+    display: flex;
+    flex-flow: row wrap;    
+  }
+  
+  a { 
+    display: block;
+    text-decoration: none;
+    color: $nav-color;
+    font-family: $nav-link-font, cursive;
+    font-size: 1.5rem;
+  }
+}
+#tag-line {
+
+  color: $nav-color;
+  font-family: Courgette, cursive;  
+  text-align: left;
+  margin: 1%;
+  padding: 0 1%;
+}
+
+/********* MAIN CONTENT STYLING *********/
+
+span {
+    font-family: cursive;
+    color: $banner-color;
+  }
+/********* MODULE CONTENT STYLING *******/
+
+.module-row {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1% 5%;
+  background-color: rgb(225,225,225);
+  justify-content: space-around;
+  text-align: center;
+  
+  .module {
+    width: 30%;
+    background-color: rgb(215,215,215);
+  }
+  
+  h1 {
+    font-family: Oxygen, sans-serif;
+  }
+}
+/********* FOOTER STYLING ***************/
+
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: $banner-color;
+  
+  section {
+    width: 33%;
+    padding: 2% 5% 1% 5%;
+  }
+  
+}
