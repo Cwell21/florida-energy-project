@@ -1,3 +1,4 @@
+/********** UNIVERSAL STYLES ************/
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -9,5 +10,38 @@ html {
 
 img {
   max-width: 100%; }
+
+/********* LAYOUT STYLING ***************/
+/********* HEADER STYLING ***************/
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ec6600;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse nowrap;
+          flex-flow: row-reverse nowrap;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  margin-top: 1%; }
+
+#top-nav {
+  min-width: 60%; }
+  #top-nav ul {
+    list-style: none; }
+  #top-nav li {
+    display: inline-block; }
+  #top-nav a {
+    display: block;
+    text-decoration: none;
+    color: white; }
+
+#tag-line {
+  color: white;
+  font-family: Courgette, cursive; }
+
+/********* MAIN CONTENT STYLING *********/
+/********* FOOTER STYLING ***************/
 
 /*# sourceMappingURL=fesc-styles.css.map */

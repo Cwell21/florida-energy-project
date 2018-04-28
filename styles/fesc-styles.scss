@@ -12,6 +12,8 @@ $nav-hover-color: rgb(0,0,0);
 $nav-link-font: Concert One, cursive;
 
 
+/********** UNIVERSAL STYLES ************/
+
 html {
   box-sizing: border-box;
   font-size: 1rem;  
@@ -27,3 +29,50 @@ img {
 body {
   
 }
+/********* LAYOUT STYLING ***************/
+
+
+/********* HEADER STYLING ***************/
+
+.header {
+  display: flex;
+  background-color: $banner-color;
+  flex-flow: row-reverse nowrap;
+  align-content: flex-end;
+  margin-top: 1%;
+}
+
+#logo {
+  
+  
+}
+
+#top-nav {
+  
+  min-width: 60%;
+  
+  ul {
+    list-style: none;
+  }
+  
+  li {
+    display: inline-block;
+  }
+  
+  a { 
+    display: block;
+    text-decoration: none;
+    color: $nav-color;
+  }
+}
+
+#tag-line {
+  
+  color: $nav-color;
+  font-family: Courgette, cursive;
+}
+
+/********* MAIN CONTENT STYLING *********/
+
+
+/********* FOOTER STYLING ***************/
