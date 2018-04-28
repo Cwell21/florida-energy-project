@@ -74,9 +74,7 @@ body {
     justify-content: space-between;
     min-width: 15%;
     margin-right: 1%;
-    padding-top: 5%;
-    color: $banner-color; 
-    
+    padding-top: 5%;      
   }
 
 }
@@ -85,7 +83,7 @@ body {
   background-color: $banner-color;
   flex-flow: row-reverse wrap;
   justify-content: space-around;
-  margin: 1% 0 1% 0;
+  margin: 2% 0 1% 0;
 }
 #logo {
   
@@ -140,6 +138,7 @@ span {
     font-size: 2rem;
   }
   article {
+    font-family: "Work Sans", sans-serif;
     font-size: 1.25rem;
   }
   ol {
@@ -153,13 +152,16 @@ span {
   display: flex;
   flex-flow: row wrap;
   padding: 1% 5%;
-  background-color: rgb(225,225,225);
+  background-color: rgb(240,240,240);
   justify-content: space-around;
   text-align: center;
   
   .module {
     width: 30%;
     background-color: rgb(215,215,215);
+    border-radius: 5%;
+    padding: 1% 2%;
+    font-size: 1.15rem;
   }
   
   h1 {
@@ -167,16 +169,19 @@ span {
   }
 }
 #partUniv{
-  background-color: rgb(225,225,225);
+  background-color: rgb(240,240,240);
   justify-content: space-around;
   ul {
-    width: 500px;
+    display: flex;
+    flex-flow: column wrap;
+    width: 1500px;
     align-content: space-around;
   }
   li {
     display: inline;
-    text-decoration: none;
-    width: 100%;
+    width: 5%;
+    margin: 0 2% 0 2%;
+    list-style: none;
     
   }
 }
@@ -186,6 +191,7 @@ footer {
   display: flex;
   flex-flow: row wrap;
   background-color: $banner-color;
+  color: rgb(255,255,255);
   
   section {
     width: 33%;
