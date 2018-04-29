@@ -92,12 +92,13 @@ em {
   padding: 0;
 }
 #top-nav {  
-  max-width: 45%;
+  min-width: 55%;
   
   ul {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    align-content: space-around;
     list-style: none;
   }
   
@@ -118,7 +119,8 @@ em {
   color: $nav-color;
   font-family: Courgette, cursive;  
   text-align: left;
-  padding: 0 1%;
+  padding: 0 3%;
+  min-width: 45%;
 }
 
 /********* MAIN CONTENT STYLING *********/
