@@ -28,6 +28,7 @@
     <!-- Google Font Code-->
     <link href="https://fonts.googleapis.com/css?family=Concert+One|Courgette" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     
     <!--Font Awesome Code-->
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
@@ -52,8 +53,10 @@
       }(document, "script", "twitter-wjs"));
     </script>
     
+    <!--FESC Javascript-->
+    <script src="/js/script.js"></script>
   </head>
-  <body>
+  <body onload="dispUniv()">
     <!--FACEBOOK SCRIPT-->
      <div id="fb-root"></div>
       <script>(function(d, s, id) {
@@ -73,9 +76,9 @@
             <button id="srchButton" name="search"><i class="fas fa-search"></i></button>
         </div>
         <div id="social-links">
-            <i class="fab fa-facebook-f fa-1x"></i>
-            <i class="fab fa-twitter fa-1x"></i>
-            <i class="fab fa-instagram fa-1x"></i>          
+            <i class="fab fa-facebook-f fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"></i>
+            <i class="fab fa-instagram fa-2x"></i>          
         </div>
       </div>
       <div class="header-nav">
@@ -91,30 +94,27 @@
         <h2 id="tag-line">Promoting colaboration among Florida's energy experts</h2>
       </div>
       <div class="main-content">
-        <div class="container-row">
+        <figure>
           <img src="images/solar-panel.jpg" alt="Solar Panels in the sun">
-          <article>
-            <h2><span>FESC</span> Bringing Energy Solutions to Florida, the Nation, and the World.</h2>
-            <p>
-              The Florida Energy Systems Consortium (FESC) was created by the Florida State government to promote collaboration among the energy experts at its 12 supported universities to share energy-related expertise. The consortium assists the state in the development and implementation of an environmentally compatible, sustainable, and efficient energy strategic plan. The Consortium was charged to ‘perform research and development on innovative energy systems that lead to alternative energy strategies, improved energy efficiencies, and expanded economic development for the state‘. The legislature appropriated funding for research at five of the universities as well as support for education, outreach, and technology commercialization. The Consortium reports to and provides guidance on an as needed basis to the Florida Legislature, Executive Office of the Governor, and the Florida’s Office of Energy housed in the Florida Department of Agriculture and Consumer Services.
-            </p>
-            <p>
-              Overarching to the Consortium’s research strategy is an energy systems approach to identify innovation opportunities, prepare an energy workforce, and guide economic development.
-
-              Through collaborative research and development across the State University System and the industry, the goal of the consortium is to become a world leader in energy research, education, technology, and 
-              energy systems analysis. In so doing, the consortium shall:
-            </p>
-            <ol>
-              <li>Coordinate and initiate increased collaborative interdisciplinary energy research among the universities and the energy industry.</li>
-
-              <li>Assist in the creation and development of a Florida-based energy technology industry through efforts that would expedite commercialization of innovative energy technologies by taking advantage of the energy expertise within the State University System, high-technology incubators, industrial parks, and industry-driven research centers.</li>
-
-              <li>Provide a state resource for objective energy systems analysis.</li>
-
-              <li>Develop education and outreach programs to prepare a qualified energy workforce and informed public.</li>
-            </ol>
-          </article>
-        </div>
+          <figcaption>Solar Panels Collecting Energy</figcaption>
+        </figure>
+        <article>
+          <h2><span>FESC</span> Bringing Energy Solutions to the World.</h2>
+          <p>
+            <em>T</em> he Florida Energy Systems Consortium <span>(FESC)</span> was created by the Florida State government to promote collaboration among the energy experts at its 12 supported universities to share energy-related expertise. The consortium assists the state in the development and implementation of an environmentally compatible, sustainable, and efficient energy strategic plan. The Consortium was charged to ‘perform research and development on innovative energy systems that lead to alternative energy strategies, improved energy efficiencies, and expanded economic development for the state‘. The legislature appropriated funding for research at five of the universities as well as support for education, outreach, and technology commercialization. The Consortium reports to and provides guidance on an as needed basis to the Florida Legislature, Executive Office of the Governor, and the Florida’s Office of Energy housed in the Florida Department of Agriculture and Consumer Services.
+          </p>
+          <p>
+            Overarching to the Consortium’s research strategy is an energy systems approach to identify innovation opportunities, prepare an energy workforce, and guide economic development.
+            Through collaborative research and development across the State University System and the industry, the goal of the consortium is to become a world leader in energy research, education, technology, and 
+            energy systems analysis. In so doing, the consortium shall:
+          </p>
+          <ol>
+            <li>Coordinate and initiate increased collaborative interdisciplinary energy research among the universities and the energy industry.</li>
+            <li>Assist in the creation and development of a Florida-based energy technology industry through efforts that would expedite commercialization of innovative energy technologies by taking advantage of         the energy expertise within the State University System, high-technology incubators, industrial parks, and industry-driven research centers.</li>
+            <li>Provide a state resource for objective energy systems analysis.</li>
+            <li>Develop education and outreach programs to prepare a qualified energy workforce and informed public.</li>
+          </ol>
+        </article>
         <div class="module-row">
           <div class="module">
             <h1><span>FESC</span> Expertise</h1>
@@ -138,10 +138,9 @@
             <a href="projects.html">Learn More....</a>
           </div>
         </div>
-        <div class="row">
-          
-          <!--insert participating university logo's-->
-        
+        <div>
+          <ul id="partUniv">           
+          </ul>                  
         </div>
       </div>
       <footer>
