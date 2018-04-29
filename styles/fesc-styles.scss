@@ -85,18 +85,14 @@ em {
 .header-nav {
   display: flex;
   background-color: $banner-color;
-  flex-flow: row-reverse wrap;
+  flex-flow: row wrap;
   justify-content: space-around;
-  margin: 2% 0 1% 0;
+  align-content: space-around;
+  margin-top: 2%;
+  padding: 0;
 }
-#logo {
-  
-  
-}
-#top-nav {
-  
-  min-width: 50%;
-  
+#top-nav {  
+  max-width: 45%;
   
   ul {
     display: flex;
@@ -119,11 +115,9 @@ em {
   }
 }
 #tag-line {
-
   color: $nav-color;
   font-family: Courgette, cursive;  
   text-align: left;
-  margin: 1%;
   padding: 0 1%;
 }
 
