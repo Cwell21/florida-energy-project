@@ -1,5 +1,6 @@
 //Javascript file for FESC project 4-28-18
 
+
 function dispUniv() {  
   let univ = ["uf", "fsu", "ucf", "usf", "fam", "fau", "fgc", "fiu", "ncf", "unf", "uwf", "fpu"];
   //get DIV element

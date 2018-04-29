@@ -183,8 +183,7 @@ span {
     display: inline;
     width: 5%;
     margin: 0 2% 0 2%;
-    list-style: none;
-    
+    list-style: none;   
   }
 }
 /********* FOOTER STYLING ***************/
@@ -194,14 +193,35 @@ footer {
   flex-flow: row wrap;
   background-color: $banner-color;
   color: rgb(255,255,255);
-  
+
   section {
     width: 33%;
-    padding: 2% 5% 1% 5%;
+    padding: 1% 5% 1% 5%;
+    border-color: white;
+    border-right-style: solid;
+    border-width: 2px;
+    text-align: center;
   }
+  section:last-child{
+    border: none;
+  }
+  
   
 }
 
 /********* MEDIA QUERIES ***************/
 
-
+@media screen and (max-width: 980px) {
+  .module {
+    min-width: 100%;
+    border-radius: 0;
+  }
+  #partUniv li{
+    padding-right: 6%;
+  }
+  footer section{
+    
+    width: 100%;
+    border: none;
+  }
+}
