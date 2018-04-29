@@ -32,6 +32,10 @@ body {
   background-color: rgb(255,255,255);
   padding-top: 1%;
 }
+em {
+  font-size: 2rem;
+  font-weight: 900;
+}
 /********* LAYOUT STYLING ***************/
 
 
@@ -135,7 +139,9 @@ span {
     float: left;
   }
   h2 {    
-    font-size: 2rem;
+    margin-top: 1%;
+    padding-top: 2% 0;
+    font-size: 2.25rem;
   }
   article {
     font-family: "Work Sans", sans-serif;

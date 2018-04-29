@@ -18,6 +18,10 @@ body {
   background-color: white;
   padding-top: 1%; }
 
+em {
+  font-size: 2rem;
+  font-weight: 900; }
+
 /********* LAYOUT STYLING ***************/
 /********* HEADER STYLING ***************/
 .banner {
@@ -123,7 +127,9 @@ span {
   padding: 0;
   float: left; }
 .main-content h2 {
-  font-size: 2rem; }
+  margin-top: 1%;
+  padding-top: 2% 0;
+  font-size: 2.25rem; }
 .main-content article {
   font-family: "Work Sans", sans-serif;
   font-size: 1.25rem; }
