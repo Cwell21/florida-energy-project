@@ -18,6 +18,14 @@ $fesc-brand: cursive;
   text-align: center;
   justify-content: center;
 }
+@mixin soc-links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  min-width: 15%;
+  margin-right: 1%;
+  padding-top: 5%;      
+}
 
 /********** UNIVERSAL STYLES ************/
 
@@ -79,12 +87,7 @@ em {
   }
   
   #social-links{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    min-width: 15%;
-    margin-right: 1%;
-    padding-top: 5%;      
+    @include soc-links;
   }
 
 }
@@ -119,6 +122,9 @@ em {
     color: $nav-color;
     font-family: $nav-link-font, cursive;
     font-size: 1.5rem;
+  }
+  a:hover {
+    color: $nav-hover-color;
   }
 }
 #tag-line {
@@ -213,6 +219,9 @@ footer {
   }
   section:last-child{
     border: none;
+  }
+  #social-links-bottom {
+    @include soc-links;
   }
   
   
