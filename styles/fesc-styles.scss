@@ -12,6 +12,12 @@ $nav-hover-color: rgb(0,0,0);
 $nav-link-font: Concert One, cursive;
 $fesc-brand: cursive;
 
+//mixins
+@mixin resp-header {
+  min-width:100%;
+  text-align: center;
+  justify-content: center;
+}
 
 /********** UNIVERSAL STYLES ************/
 
@@ -92,7 +98,7 @@ em {
   padding: 0;
 }
 #top-nav {  
-  min-width: 55%;
+  width: 45%;
   
   ul {
     display: flex;
@@ -120,7 +126,7 @@ em {
   font-family: Courgette, cursive;  
   text-align: left;
   padding: 0 3%;
-  min-width: 45%;
+  width: 55%;
 }
 
 /********* MAIN CONTENT STYLING *********/
@@ -185,6 +191,9 @@ span {
     margin: 0 2% 0 2%;
     list-style: none;   
   }
+  img {
+    max-width: 4%;
+  }
 }
 /********* FOOTER STYLING ***************/
 
@@ -212,12 +221,23 @@ footer {
 /********* MEDIA QUERIES ***************/
 
 @media screen and (max-width: 980px) {
+  
+  #tag-line{
+   @include resp-header;
+  }
+  #top-nav{
+    @include resp-header;
+  }
   .module {
     min-width: 100%;
     border-radius: 0;
   }
   #partUniv li{
     padding-right: 6%;
+    
+    img{
+      max-width:30%;
+    }
   }
   footer section{
     

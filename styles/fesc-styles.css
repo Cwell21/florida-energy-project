@@ -87,7 +87,7 @@ em {
   padding: 0; }
 
 #top-nav {
-  min-width: 55%; }
+  width: 45%; }
   #top-nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -121,7 +121,7 @@ em {
   font-family: Courgette, cursive;
   text-align: left;
   padding: 0 3%;
-  min-width: 45%; }
+  width: 55%; }
 
 /********* MAIN CONTENT STYLING *********/
 span {
@@ -184,6 +184,8 @@ span {
     width: 5%;
     margin: 0 2% 0 2%;
     list-style: none; }
+  #partUniv img {
+    max-width: 4%; }
 
 /********* FOOTER STYLING ***************/
 footer {
@@ -208,12 +210,28 @@ footer {
 
 /********* MEDIA QUERIES ***************/
 @media screen and (max-width: 980px) {
+  #tag-line {
+    min-width: 100%;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+  #top-nav {
+    min-width: 100%;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
   .module {
     min-width: 100%;
     border-radius: 0; }
 
   #partUniv li {
     padding-right: 6%; }
+    #partUniv li img {
+      max-width: 30%; }
 
   footer section {
     width: 100%;
