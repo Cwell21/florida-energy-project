@@ -163,6 +163,12 @@ span {
     border-radius: 5%;
     padding: 1% 2%;
     font-size: 1.15rem; }
+  .module-row .project-module {
+    width: 30%;
+    background-color: #d7d7d7;
+    border-radius: 5%;
+    padding: 1% 2%;
+    font-size: 1.15rem; }
   .module-row h1 {
     font-family: Oxygen, sans-serif; }
 

@@ -26,6 +26,13 @@ $fesc-brand: cursive;
   margin-right: 1%;
   padding-top: 5%;      
 }
+@mixin mod-style {
+  width: 30%;
+  background-color: rgb(215,215,215);
+  border-radius: 5%;
+  padding: 1% 2%;
+  font-size: 1.15rem;
+}
 
 /********** UNIVERSAL STYLES ************/
 
@@ -171,11 +178,11 @@ span {
   text-align: center;
   
   .module {
-    width: 30%;
-    background-color: rgb(215,215,215);
-    border-radius: 5%;
-    padding: 1% 2%;
-    font-size: 1.15rem;
+    @include mod-style;
+  }
+  
+  .project-module {
+    @include mod-style;
   }
   
   h1 {
