@@ -66,9 +66,20 @@ em {
 }
 /********* LAYOUT STYLING ***************/
 
+.contact {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#grinter-hall {
+  max-width: 75%;
+}
 #balaban {
   min-width: 40%;
 }
+
 
 /********* HEADER STYLING ***************/
 
@@ -187,11 +198,21 @@ span {
 #projects {
   width: 150%; 
 }
-#projSpot {
+#proj-spot {
   display: flex;
   overflow: hidden;
   min-height: 75px;
   margin: 5% 5% 0 5%;
+  background-color: $banner-color;
+  color: $nav-color;
+  align-items: center;
+  justify-content: center;
+}
+#member-spot {
+  display: flex;
+  overflow: hidden;
+  min-height: 75px;
+  margin: 1% 5% 0 5%;
   background-color: $banner-color;
   color: $nav-color;
   align-items: center;

@@ -23,6 +23,24 @@ em {
   font-weight: 900; }
 
 /********* LAYOUT STYLING ***************/
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+#grinter-hall {
+  max-width: 75%; }
+
 #balaban {
   min-width: 40%; }
 
@@ -156,13 +174,29 @@ span {
 #projects {
   width: 150%; }
 
-#projSpot {
+#proj-spot {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
   min-height: 75px;
   margin: 5% 5% 0 5%;
+  background-color: #ec6600;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+#member-spot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  min-height: 75px;
+  margin: 1% 5% 0 5%;
   background-color: #ec6600;
   color: white;
   -webkit-box-align: center;
