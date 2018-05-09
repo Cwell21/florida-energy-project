@@ -36,6 +36,10 @@ $fesc-brand: cursive;
   padding: 1% 2%;
   font-size: 1.15rem;
 }
+@mixin main-content{
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.25rem;
+}
 
 /********** UNIVERSAL STYLES ************/
 
@@ -162,8 +166,7 @@ span {
     font-size: 2.25rem;
   }
   article {
-    font-family: "Work Sans", sans-serif;
-    font-size: 1.25rem;
+    @include main-content;
   }
   ol {
     clear: both;
