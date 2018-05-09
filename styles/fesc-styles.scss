@@ -1,5 +1,8 @@
 // SCSS style sheet for FESC project
 
+// GOOGLE FONTS 
+//font-family: 'Lora', serif;
+
 //SCSS color variables
 $banner-color: rgb(236,102,0);
 $border-color: rgb(0,236,220);
@@ -183,6 +186,21 @@ span {
   
   .project-module {
     @include mod-style;
+    min-width: 100%;
+    margin-top: 1%;
+    header {
+      font-size: 2rem;
+    }
+    span {
+      color: $banner-color;
+      font-family: 'Lora', serif;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    p:first-of-type {
+      max-width: 30%;
+    }
   }
   
   h1 {
@@ -247,6 +265,7 @@ footer {
   .module {
     min-width: 100%;
     border-radius: 0;
+    margin-top: 1%;
   }
   #partUniv li{
     padding-right: 6%;

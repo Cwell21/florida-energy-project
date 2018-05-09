@@ -168,7 +168,18 @@ span {
     background-color: #d7d7d7;
     border-radius: 5%;
     padding: 1% 2%;
-    font-size: 1.15rem; }
+    font-size: 1.15rem;
+    min-width: 100%;
+    margin-top: 1%; }
+    .module-row .project-module header {
+      font-size: 2rem; }
+    .module-row .project-module span {
+      color: #ec6600;
+      font-family: 'Lora', serif; }
+    .module-row .project-module h2 {
+      font-size: 1.5rem; }
+    .module-row .project-module p:first-of-type {
+      max-width: 30%; }
   .module-row h1 {
     font-family: Oxygen, sans-serif; }
 
@@ -248,7 +259,8 @@ footer {
 
   .module {
     min-width: 100%;
-    border-radius: 0; }
+    border-radius: 0;
+    margin-top: 1%; }
 
   #partUniv li {
     padding-right: 6%; }
