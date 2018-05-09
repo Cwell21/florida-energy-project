@@ -130,18 +130,44 @@ span {
   font-family: cursive;
   color: #ec6600; }
 
-.main-content figure {
-  padding: 0;
-  float: left; }
-.main-content h2 {
-  margin-top: 1%;
-  padding-top: 2% 0;
-  font-size: 2.25rem; }
-.main-content article {
-  font-family: "Work Sans", sans-serif;
-  font-size: 1.25rem; }
-.main-content ol {
-  clear: both; }
+.main-content {
+  padding: 1%; }
+  .main-content figure {
+    padding: 0;
+    float: left; }
+  .main-content h1 {
+    text-align: center; }
+  .main-content h2 {
+    margin-top: 1%;
+    padding-top: 2% 0;
+    font-size: 2.25rem; }
+  .main-content article {
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.25rem; }
+  .main-content section {
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.25rem; }
+  .main-content ol {
+    clear: both; }
+
+#projects {
+  width: 150%; }
+
+#projSpot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  min-height: 75px;
+  margin: 5% 5% 0 5%;
+  background-color: #ec6600;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 /********* MODULE CONTENT STYLING *******/
 .module-row {
@@ -169,7 +195,6 @@ span {
     border-radius: 5%;
     padding: 1% 2%;
     font-size: 1.15rem;
-    min-width: 100%;
     margin-top: 1%; }
     .module-row .project-module header {
       font-size: 2rem; }
@@ -178,8 +203,6 @@ span {
       font-family: 'Lora', serif; }
     .module-row .project-module h2 {
       font-size: 1.5rem; }
-    .module-row .project-module p:first-of-type {
-      max-width: 30%; }
   .module-row h1 {
     font-family: Oxygen, sans-serif; }
 
@@ -220,12 +243,7 @@ footer {
   footer section {
     width: 33%;
     padding: 1% 5% 1% 5%;
-    border-color: white;
-    border-right-style: solid;
-    border-width: 2px;
     text-align: center; }
-  footer section:last-child {
-    border: none; }
   footer #social-links-bottom {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -258,6 +276,11 @@ footer {
             justify-content: center; }
 
   .module {
+    min-width: 100%;
+    border-radius: 0;
+    margin-top: 1%; }
+
+  .project-module {
     min-width: 100%;
     border-radius: 0;
     margin-top: 1%; }
