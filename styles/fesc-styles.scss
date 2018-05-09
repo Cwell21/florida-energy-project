@@ -66,6 +66,9 @@ em {
 }
 /********* LAYOUT STYLING ***************/
 
+#balaban {
+  min-width: 40%;
+}
 
 /********* HEADER STYLING ***************/
 
@@ -295,6 +298,12 @@ footer {
     img{
       max-width:30%;
     }
+  }
+  #norton {
+    display: none;
+  }
+  #balaban {
+    display: none;
   }
   footer section{
     

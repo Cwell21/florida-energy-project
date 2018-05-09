@@ -23,6 +23,9 @@ em {
   font-weight: 900; }
 
 /********* LAYOUT STYLING ***************/
+#balaban {
+  min-width: 40%; }
+
 /********* HEADER STYLING ***************/
 .banner {
   display: -webkit-box;
@@ -289,6 +292,12 @@ footer {
     padding-right: 6%; }
     #partUniv li img {
       max-width: 30%; }
+
+  #norton {
+    display: none; }
+
+  #balaban {
+    display: none; }
 
   footer section {
     width: 100%;
