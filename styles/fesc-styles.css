@@ -303,14 +303,16 @@ footer {
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    margin-bottom: 0; }
 
-  #top-nav {
+  #top-nav li {
     min-width: 100%;
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    margin: 4% 0; }
 
   .module {
     min-width: 100%;

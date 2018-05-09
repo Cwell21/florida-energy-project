@@ -298,10 +298,12 @@ footer {
 @media screen and (max-width: 980px) {
   
   #tag-line{
-   @include resp-header;
-  }
-  #top-nav{
     @include resp-header;
+    margin-bottom: 0;
+  }
+  #top-nav li{
+    @include resp-header;
+    margin: 4% 0;
   }
   .module {
     min-width: 100%;
