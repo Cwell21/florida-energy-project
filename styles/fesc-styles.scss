@@ -184,7 +184,7 @@ span {
     padding-top: 2% 0;
     font-size: 2.25rem;
   }
-  article {
+   article {
     @include main-content;
   }
   section {
@@ -305,6 +305,23 @@ footer {
     @include resp-header;
     margin: 4% 0;
   }
+  #top-nav a {
+    font-size: 2rem;
+  }
+  #hide-me{
+  display: none;
+}
+  ol {
+    display: none;
+  }
+  p {
+    margin: 0 2%;
+  }
+  #social-links {
+    flex-flow: column;
+    width: 100%;
+    justify-content: center;
+}
   .module {
     min-width: 100%;
     border-radius: 0;

@@ -314,6 +314,28 @@ footer {
             justify-content: center;
     margin: 4% 0; }
 
+  #top-nav a {
+    font-size: 2rem; }
+
+  #hide-me {
+    display: none; }
+
+  ol {
+    display: none; }
+
+  p {
+    margin: 0 2%; }
+
+  #social-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
   .module {
     min-width: 100%;
     border-radius: 0;
