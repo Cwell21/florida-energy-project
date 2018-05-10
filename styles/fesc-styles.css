@@ -149,7 +149,7 @@ em {
   display: none;
   text-align: left;
   position: absolute;
-  min-width: 160px;
+  min-width: 100px;
   background-color: white;
   color: #ec6600;
   z-index: 1; }
