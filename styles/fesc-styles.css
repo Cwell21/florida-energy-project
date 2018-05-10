@@ -136,8 +136,6 @@ em {
     color: white;
     font-family: Concert One, cursive, cursive;
     font-size: 1.5rem; }
-  #top-nav a:hover {
-    color: black; }
 
 #tag-line {
   color: white;
@@ -145,6 +143,25 @@ em {
   text-align: left;
   padding: 0 3%;
   width: 55%; }
+
+/********* DROPDOWN STYLING ***************/
+.dropdown-content {
+  display: none;
+  text-align: left;
+  position: absolute;
+  min-width: 160px;
+  background-color: white;
+  color: #ec6600;
+  z-index: 1; }
+  .dropdown-content a {
+    color: black;
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+    text-align: left; }
+
+.dropdown:hover, .dropbtn:hover .dropdown-content {
+  display: block; }
 
 /********* MAIN CONTENT STYLING *********/
 span {
