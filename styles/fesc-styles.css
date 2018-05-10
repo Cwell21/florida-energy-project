@@ -149,7 +149,8 @@ em {
   display: none;
   text-align: left;
   position: absolute;
-  min-width: 100px;
+  min-width: 50px;
+  margin-right: 5%;
   background-color: white;
   color: #ec6600;
   z-index: 1; }
@@ -158,6 +159,7 @@ em {
     text-decoration: none;
     padding: 12px 16px;
     display: block;
+    font-size: .5rem;
     text-align: left; }
 
 .dropdown:hover .dropdown-content {
