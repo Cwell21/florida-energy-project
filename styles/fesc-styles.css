@@ -154,13 +154,13 @@ em {
   color: #ec6600;
   z-index: 1; }
   .dropdown-content a {
-    color: black;
+    background-color: black;
     text-decoration: none;
     padding: 12px 16px;
     display: block;
     text-align: left; }
 
-.dropdown:hover, .dropbtn:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
   display: block; }
 
 /********* MAIN CONTENT STYLING *********/
