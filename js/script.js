@@ -14,10 +14,13 @@ function dispUniv() {
 }
 
 function dispMenu() {
-    let e = document.getElementsByClassName("drop-content");
+    var x = document.getElementById("projects");
   if (dispFlag == false){
-    e[0].style.display = "block";
-    
+    x.style.display = "block";    
+    dispFlag = true;
+  }else {
+    x.tyle.display = "none";
+    dispFlag = false;
   }
 }
 
