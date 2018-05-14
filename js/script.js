@@ -1,5 +1,6 @@
 //Javascript file for FESC project 4-28-18
 
+var dispFlag = false;
 
 function dispUniv() {  
   let univ = ["uf", "fsu", "ucf", "usf", "fam", "fau", "fgc", "fiu", "ncf", "unf", "uwf", "fpu"];
@@ -10,5 +11,13 @@ function dispUniv() {
    univIcon = univIcon + "<li><img src=\"images\\univ\\" + univ[i] + ".jpg\" alt=\" " + univ[i] + "\"></li>" 
   }    
   e.innerHTML = univIcon;
+}
+
+function dispMenu() {
+    let e = document.getElementsByClassName("drop-content");
+  if (dispFlag == false){
+    e[0].style.display = "block";
+    
+  }
 }
 

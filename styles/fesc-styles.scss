@@ -373,5 +373,13 @@ footer {
     border: none;
   }
   
+  .dropdown:hover .dropdown-content {
+    display: none;
+  
+  }
+  .dropdown:focus .dropdown-content {
+    display: block;
+  }
+
   
 }
