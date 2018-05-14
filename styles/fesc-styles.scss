@@ -176,7 +176,7 @@ em {
   display: none;
   text-align: left;
   position: absolute;
-  width: 100px;
+  width: 100%;
   margin-top: 25px;
   background-color: $nav-color;
   color: $banner-color;
@@ -336,9 +336,12 @@ footer {
   #top-nav li{
     @include resp-header;
     margin-top: 4%;
+    display: block;
+    width: 100%;
   }
   #top-nav a {
-    font-size: 2rem;
+    font-size: 2rem;    
+  
   }
   #hide-me{
   display: none;
@@ -385,7 +388,5 @@ footer {
   
   .dropdown:hover .dropdown-content {
     display: none;
-//    position: relative;
-  
   }
 }
