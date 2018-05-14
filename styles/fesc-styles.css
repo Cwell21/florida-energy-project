@@ -121,21 +121,24 @@ em {
         justify-content: space-around;
     -ms-flex-line-pack: distribute;
         align-content: space-around;
-    list-style: none; }
+    list-style: none;
+    margin: 0; }
   #top-nav li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap; }
+    margin: 0;
+    text-align: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 100px;
+    height: 75px;
+    padding-top: 25.5px; }
   #top-nav a {
     display: block;
     text-decoration: none;
     color: white;
     font-family: Concert One, cursive, cursive;
     font-size: 1.5rem; }
+  #top-nav li:hover {
+    background-color: black; }
 
 #tag-line {
   color: white;
@@ -149,8 +152,8 @@ em {
   display: none;
   text-align: left;
   position: absolute;
-  min-width: 50px;
-  margin-right: 5%;
+  width: 100px;
+  margin-top: 25px;
   background-color: white;
   color: #ec6600;
   z-index: 1; }
@@ -244,13 +247,17 @@ span {
     background-color: #d7d7d7;
     border-radius: 5%;
     padding: 1% 2%;
-    font-size: 1.15rem; }
+    font-size: 1.15rem;
+    -webkit-box-shadow: 5px 5px;
+            box-shadow: 5px 5px; }
   .module-row .project-module {
     width: 30%;
     background-color: #d7d7d7;
     border-radius: 5%;
     padding: 1% 2%;
     font-size: 1.15rem;
+    -webkit-box-shadow: 5px 5px;
+            box-shadow: 5px 5px;
     margin-top: 1%; }
     .module-row .project-module header {
       font-size: 2rem; }
@@ -331,7 +338,7 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 4% 0; }
+    margin-top: 4%; }
 
   #top-nav a {
     font-size: 2rem; }
@@ -381,9 +388,6 @@ footer {
     border: none; }
 
   .dropdown:hover .dropdown-content {
-    display: none; }
-
-  .dropdown:focus .dropdown-content {
-    display: block; } }
+    display: none; } }
 
 /*# sourceMappingURL=fesc-styles.css.map */
