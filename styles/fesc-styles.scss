@@ -342,7 +342,6 @@ footer {
   #top-nav li{
     @include resp-header;
     margin-top: 4%;
-    width: 100%;
   }
   #top-nav a {
     font-size: 2rem; 
