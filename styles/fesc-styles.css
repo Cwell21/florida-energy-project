@@ -325,25 +325,33 @@ footer {
 /********* MEDIA QUERIES ***************/
 @media screen and (max-width: 980px) {
   #tag-line {
-    min-width: 100%;
+    width: 100%;
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 0; }
 
+  #top-nav ul {
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+
   #top-nav li {
-    min-width: 100%;
+    width: 100%;
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 4%;
-    display: block;
     width: 100%; }
 
   #top-nav a {
-    font-size: 2rem; }
+    font-size: 2rem;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0; }
 
   #hide-me {
     display: none; }

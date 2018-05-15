@@ -17,9 +17,10 @@ $fesc-brand: cursive;
 
 //mixins
 @mixin resp-header {
-  min-width:100%;
+  width:100%;
   text-align: center;
   justify-content: center;
+
 }
 @mixin soc-links {
   display: flex;
@@ -333,14 +334,22 @@ footer {
     @include resp-header;
     margin-bottom: 0;
   }
+  #top-nav ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
   #top-nav li{
     @include resp-header;
     margin-top: 4%;
-    display: block;
     width: 100%;
   }
   #top-nav a {
-    font-size: 2rem;    
+    font-size: 2rem; 
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
   
   }
   #hide-me{
