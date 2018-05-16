@@ -32,10 +32,14 @@ function dispMenu(y) {
       x.style.marginTop = 15 + "px";
       x.style.maxWidth = 100 + "%";
       dispFlag = true;
-    }else {
+    }else{
       x.style.display = "none";
       dispFlag = false;
     }
+  }else {
+    dispFlag = flase;
   }
 }
+
+
 
