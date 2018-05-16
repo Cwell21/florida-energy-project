@@ -324,6 +324,15 @@ footer {
 
 /********* MEDIA QUERIES ***************/
 @media screen and (max-width: 980px) {
+  .header-nav {
+    margin: 0;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center; }
+
   #tag-line {
     width: 100%;
     text-align: center;
@@ -331,6 +340,9 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 0; }
+
+  #top-nav {
+    width: 100%; }
 
   #top-nav ul {
     width: 100%;
