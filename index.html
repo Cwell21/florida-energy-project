@@ -60,11 +60,14 @@
 
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-          ['Year', 'Billion BTU'],
-          ['2004',  1000],
-          ['2005',  1170],
-          ['2006',  660],
-          ['2007',  1030]
+          ['Year', 'Energy Consumption', 'Renewable Energy Production'],
+          ['1960',  57344, 35680],
+          ['1970',  171346, 51035],
+          ['1980',  309694, 90049],
+          ['1990',  489741, 198986],
+          ['2000',  668216, 194952],
+          ['2010',  788887, 223518],
+          ['2015',  803865, 234192]
         ]);
 
         var options = {
