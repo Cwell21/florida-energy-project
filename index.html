@@ -52,7 +52,32 @@
       return t;
       }(document, "script", "twitter-wjs"));
     </script>
-    
+    <!--    GOOGLE CHART CODE-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Billion BTU'],
+          ['2004',  1000],
+          ['2005',  1170],
+          ['2006',  660],
+          ['2007',  1030]
+        ]);
+
+        var options = {
+          title: 'Florida Electricity Consumption Vs Renewable Energy Production',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
    
   </head>
   <body onload="dispUniv()">
@@ -139,6 +164,12 @@
             <li>Develop education and outreach programs to prepare a qualified energy workforce and informed public.</li>
           </ol>
         </article>
+        <div class="data-row">
+          <div class="module-chart">
+            <h1>Chart Headline</h1>
+            <div id="curve_chart"></div>
+          </div>        
+        </div>
         <div class="module-row">
           <div class="module">
             <h1><span>FESC</span> Expertise</h1>
