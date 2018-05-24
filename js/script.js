@@ -46,8 +46,16 @@ function dispMenu(y) {
 function dispLineChart(){
   
   var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  var chartW = 800;
+  var chartH = 600;
   
-  if (w > 980) {
+  if (w < 981){
+    chartW = 225;
+    chartH = 500;
+  }
+
+  
+  var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
   
     google.charts.load('current', {'packages':['corechart']});
     google.charts.setOnLoadCallback(drawChart);
@@ -74,13 +82,19 @@ function dispLineChart(){
 
       chart.draw(data, options);
     }
-  }
 }
+
 function dispBarChart() {
   
   var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  var chartW = chartW;
+  var chartH = chartH;
   
-  if (w > 980){
+  if (w < 981){
+    chartW = 265;
+    chartH = 500;
+  }
+
     google.charts.load("current", {packages:["corechart"]});
 
     google.charts.setOnLoadCallback(drawChart);
@@ -110,15 +124,14 @@ function dispBarChart() {
 
         var options = {
           title: "Growth of Florida Renewable Energy Production by Decade",
-          width: 800,
-          height: 600,
+          width: chartW,
+          height: chartH,
           bar: {groupWidth: "95%"},
           legend: { position: "none" },
         };
         var chart = new google.visualization.BarChart(document.getElementById("bar_chart"));
         chart.draw(view, options);
     }
-  }
 }
 
 

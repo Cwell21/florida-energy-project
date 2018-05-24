@@ -421,10 +421,12 @@ footer {
     display: block;
   }
   #curve_chart {
-    display: none;
+    width: 100%;
+    height: auto;
   }
   #bar_chart {
-    display: none;
+    width: 100%;
+    height: auto;
   }
   ol {
     display: none;
