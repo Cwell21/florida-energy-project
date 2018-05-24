@@ -229,15 +229,68 @@ span {
           justify-content: center; }
 
 /********* MODULE CONTENT STYLING *******/
+.data-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2% 0; }
+
 .module-chart {
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 80%;
   height: auto;
   background-color: #ec6600;
-  padding: 1% 0 2% 2%; }
+  padding: 1% 0 2% 2%;
+  justify-content: center; }
   .module-chart h1 {
-    color: white; }
+    width: 75%;
+    height: auto;
+    color: white;
+    padding: 2%;
+    border: solid white 1px;
+    -webkit-box-shadow: 5px 5px;
+            box-shadow: 5px 5px; }
+  .module-chart p {
+    background-color: white;
+    font-size: 1.25rem;
+    width: 75%;
+    height: auto;
+    padding: 1%;
+    border: solid black 1px;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 10px;
+            box-shadow: 5px 10px; }
+
+#txtHidden {
+  display: none; }
 
 #curve_chart {
+  display: block;
+  position: relative;
+  width: 800px;
+  height: 600px;
+  margin: 1% 0; }
+
+#bar_chart {
+  display: block;
   position: relative;
   width: 800px;
   height: 600px; }
@@ -379,6 +432,15 @@ footer {
 
   #hide-me {
     display: none; }
+
+  #txtHidden {
+    display: block; }
+
+  #curve_chart {
+    display: hidden; }
+
+  #bar_chart {
+    display: hidden; }
 
   ol {
     display: none; }

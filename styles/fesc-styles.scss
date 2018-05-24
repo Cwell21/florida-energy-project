@@ -252,20 +252,54 @@ span {
   justify-content: center;
 }
 /********* MODULE CONTENT STYLING *******/
-
+.data-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 2% 0;
+}
 .module-chart {
-    
-  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  width: 80%;
   height: auto;
   background-color: $banner-color;
   padding: 1% 0 2% 2%;
+  justify-content: center;
 
   h1 {
+    width: 75%;
+    height: auto;
     color: white;
+    padding: 2%;
+    border: solid white 1px;
+    box-shadow: 5px 5px;
+  }
+  p {
+    background-color: $nav-color;
+    font-size: 1.25rem;
+    width: 75%;
+    height: auto;
+    padding: 1%;
+    border: solid black 1px;
+    border-radius: 5px;
+    box-shadow: 5px 10px;
   }
 }
+#txtHidden {
+  display: none;
+}
 #curve_chart {
-  
+  display: block;
+  position: relative;
+  width: 800px;
+  height: 600px;
+  margin: 1% 0;
+}
+#bar_chart {
+  display: block;
   position: relative;
   width: 800px;
   height: 600px;
@@ -380,6 +414,15 @@ footer {
   #hide-me{
   display: none;
 }
+  #txtHidden{
+    display: block;
+  }
+  #curve_chart {
+    display: hidden;
+  }
+  #bar_chart {
+    display: hidden;
+  }
   ol {
     display: none;
   }
