@@ -37,87 +37,101 @@ function dispMenu(y) {
       dispFlag = false;
     }
   }else {
-    dispFlag = flase;
+    dispFlag = false;
   }
 }
 
 //GOOGLE CHARTS SCRIPT
 
 function dispLineChart(){
+  
+  var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  
+  if (w > 980) {
+  
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
 
-  google.charts.load('current', {'packages':['corechart']});
-  google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Year', 'Energy Consumption', 'Renewable Energy Production'],
+        ['1960',  57344, 35680],
+        ['1970',  171346, 51035],
+        ['1980',  309694, 90049],
+        ['1990',  489741, 198986],
+        ['2000',  668216, 194952],
+        ['2010',  788887, 223518],
+        ['2015',  803865, 234192]
+      ]);
 
-  function drawChart() {
-    var data = google.visualization.arrayToDataTable([
-      ['Year', 'Energy Consumption', 'Renewable Energy Production'],
-      ['1960',  57344, 35680],
-      ['1970',  171346, 51035],
-      ['1980',  309694, 90049],
-      ['1990',  489741, 198986],
-      ['2000',  668216, 194952],
-      ['2010',  788887, 223518],
-      ['2015',  803865, 234192]
-    ]);
+      var options = {
+        title: 'Florida Electricity Consumption Vs Renewable Energy Production',
+        curveType: 'function',
+        legend: { position: 'bottom' }
+      };
 
-    var options = {
-      title: 'Florida Electricity Consumption Vs Renewable Energy Production',
-      curveType: 'function',
-      legend: { position: 'bottom' }
-    };
+      var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
 
-    var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-
-    chart.draw(data, options);
+      chart.draw(data, options);
+    }
   }
 }
 function dispBarChart() {
- google.charts.load("current", {packages:["corechart"]});
- google.charts.setOnLoadCallback(drawChart);
- 
-  function drawChart() {
-    
-//    let decChange = {'2010': 10674, '2000': 28566, '1990': 5128, '1980': 142212, '1970': 18384, '1960': 15809};
-    let barColor = "rgb(250,20,0)";
-    
-    var data = google.visualization.arrayToDataTable([
-      ['Decade', 'Renewable Energy Production Growth', 'Energy Consumption Growth', { role: "style" }],
-      ['2010',  10674, 14978, barColor],
-      ['2000',  98632, 120671, barColor],
-      ['1990',  5128,  149225, barColor],
-      ['1980',  142212, 132779, barColor],
-      ['1970',  18384, 124205, barColor],
-      ['1960',  15809, 95688, barColor],
-    ]);
+  
+  var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  
+  if (w > 980){
+    google.charts.load("current", {packages:["corechart"]});
 
-    var view = new google.visualization.DataView(data);
-    view.setColumns([0, 1,
-                     { calc: "stringify",
-                       sourceColumn: 1,
-                       type: "string",
-                       role: "annotation" },
-                     2]);
+    google.charts.setOnLoadCallback(drawChart);
 
-    var options = {
-      title: "Growth of Florida Renewable Energy Production by Decade",
-      width: 800,
-      height: 600,
-      bar: {groupWidth: "95%"},
-      legend: { position: "none" },
-      };
-      var chart = new google.visualization.BarChart(document.getElementById("bar_chart"));
-      chart.draw(view, options);
+      function drawChart() {
+
+    //    let decChange = {'2010': 10674, '2000': 28566, '1990': 5128, '1980': 142212, '1970': 18384, '1960': 15809};
+        let barColor = "rgb(250,20,0)";
+
+        var data = google.visualization.arrayToDataTable([
+          ['Decade', 'Renewable Energy Production Growth', 'Energy Consumption Growth', { role: "style" }],
+          ['2010',  10674, 14978, barColor],
+          ['2000',  98632, 120671, barColor],
+          ['1990',  5128,  149225, barColor],
+          ['1980',  142212, 132779, barColor],
+          ['1970',  18384, 124205, barColor],
+          ['1960',  15809, 95688, barColor],
+        ]);
+
+        var view = new google.visualization.DataView(data);
+        view.setColumns([0, 1,
+                         { calc: "stringify",
+                           sourceColumn: 1,
+                           type: "string",
+                           role: "annotation" },
+                         2]);
+
+        var options = {
+          title: "Growth of Florida Renewable Energy Production by Decade",
+          width: 800,
+          height: 600,
+          bar: {groupWidth: "95%"},
+          legend: { position: "none" },
+        };
+        var chart = new google.visualization.BarChart(document.getElementById("bar_chart"));
+        chart.draw(view, options);
+    }
   }
 }
 
 
 function fescLoad(){
-  
-  dispUniv();
+    
+  dispUniv();   
   dispLineChart();
   dispBarChart();
-  
 }
+
+window.addEventListener("resize", function() {
+  fescLoad();
+});
 
 
 
