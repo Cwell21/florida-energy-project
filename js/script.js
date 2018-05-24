@@ -75,7 +75,14 @@ function dispLineChart(){
       var options = {
         title: 'Florida Electricity Consumption Vs Renewable Energy Production',
         curveType: 'function',
-        legend: { position: 'bottom' }
+        legend: { position: 'bottom' },
+        backgroundColor: 'rgb(215,215,215)',
+        vAxis: {
+          title: 'Billion/BTU',
+        },
+        hAxis: {
+          title: 'Decade',
+        },
       };
 
       var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
@@ -105,13 +112,13 @@ function dispBarChart() {
         let barColor = "rgb(250,20,0)";
 
         var data = google.visualization.arrayToDataTable([
-          ['Decade', 'Renewable Energy Production Growth', 'Energy Consumption Growth', { role: "style" }],
-          ['2010',  10674, 14978, barColor],
-          ['2000',  98632, 120671, barColor],
-          ['1990',  5128,  149225, barColor],
-          ['1980',  142212, 132779, barColor],
-          ['1970',  18384, 124205, barColor],
-          ['1960',  15809, 95688, barColor],
+          ['Decade', 'Renewable Energy Production Growth', 'Energy Consumption Growth'],
+          ['2010',  10674, 14978],
+          ['2000',  98632, 120671],
+          ['1990',  5128,  149225],
+          ['1980',  142212, 132779],
+          ['1970',  18384, 124205],
+          ['1960',  15809, 95688],
         ]);
 
         var view = new google.visualization.DataView(data);
@@ -120,14 +127,26 @@ function dispBarChart() {
                            sourceColumn: 1,
                            type: "string",
                            role: "annotation" },
-                         2]);
+                         2,  { calc: "stringify",
+                           sourceColumn: 1,
+                           type: "string",
+                           role: "annotation" }]);
 
         var options = {
-          title: "Growth of Florida Renewable Energy Production by Decade",
+          title: "Florida Growth of RE Production vs Growth of Energy Consumption by Decade",
           width: chartW,
           height: chartH,
           bar: {groupWidth: "95%"},
           legend: { position: "none" },
+          backgroundColor: 'rgb(215,215,215)',
+          fontSize: 18,
+          vAxis: {
+            title: 'Decade',
+          },
+          hAxis: {
+            title: 'Billion/BTU',
+          },
+          
         };
         var chart = new google.visualization.BarChart(document.getElementById("bar_chart"));
         chart.draw(view, options);
