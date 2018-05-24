@@ -434,16 +434,16 @@ footer {
     display: none; }
 
   #chart-p {
-    display: hidden; }
+    display: none; }
 
   #txtHidden {
     display: block; }
 
   #curve_chart {
-    display: hidden; }
+    display: none; }
 
   #bar_chart {
-    display: hidden; }
+    display: none; }
 
   ol {
     display: none; }
