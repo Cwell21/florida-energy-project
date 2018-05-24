@@ -43,6 +43,41 @@ function dispMenu(y) {
 
 //GOOGLE CHARTS SCRIPT
 
+function dispData(){
+
+google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Energy Consumption', 'Renewable Energy Production'],
+          ['1960',  57344, 35680],
+          ['1970',  171346, 51035],
+          ['1980',  309694, 90049],
+          ['1990',  489741, 198986],
+          ['2000',  668216, 194952],
+          ['2010',  788887, 223518],
+          ['2015',  803865, 234192]
+        ]);
+
+        var options = {
+          title: 'Florida Electricity Consumption Vs Renewable Energy Production',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+}
+
+function fescLoad(){
+  
+  dispUniv();
+  dispData();
+  
+}
 
 
 
