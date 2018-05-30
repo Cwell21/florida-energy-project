@@ -50,6 +50,8 @@
       return t;
       }(document, "script", "twitter-wjs"));
     </script>
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
   </head>
   <body onload="fescLoad()">
@@ -136,28 +138,11 @@
             <li>Develop education and outreach programs to prepare a qualified energy workforce and informed public.</li>
           </ol>
         </article>
-
-        <div class="module-row">
-          <div class="module">
-            <h1><span>FESC</span> Expertise</h1>
-            <p>
-              The consortium has considerable energy-related expertise and competitively funded research. The Consortium’s research focuses on those energy areas most relevant to Florida. Specifically, the FESC research agenda addresses energy generation from our two most abundant renewable resources (biomass and solar), carbon-free electric power generation (nuclear power, carbon sequestration), tapping the energy available from the ocean along our long and populated coastline, reducing consumption through energy conservation, and defining more efficient load management and energy storage systems.
-            </p>
-            <a href="#">Learn More....</a>
-          </div>
-          <div class="module">
-            <h1><span>FESC</span> Funded Projects</h1>
-            <p>
-              The Florida Energy System Consortium (FESC) performs scholarly research and analysis of energy systems that contributes to a sustainable energy economy for Florida. In formulating a research plan for FESC, it became obvious that while most current university research was focused on specific energy components, a research gap existed from a systems perspective. It was believed that combining expertise at the State universities would position university researchers to address energy systems in a manner not possible at a single university. Building on this observation, our stated vision is to be a world leader in energy research enabled by a systems approach.
-            </p>
-            <a href="projects.html">Learn More....</a>
-          </div>
-          <div class="module">
-            <h1>Contact <span>FESC</span></h1>
-            <p>
-              FESC’s leadership team and organizational structure assure that truly leading edge research and development of critical importance to the Florida and national economies are developed, world-class students in multiple disciplines of energy are trained, and industry reaps the full benefits of the Consortium’s activities. The Leadership Team of FESC is comprised of highly experienced, highly successful innovators from the various energy related research fields, education, outreach, industrial collaboration, technology commercialization, and economic development. The FESC Director, Dr. Jennifer Curtis, is accountable for all mission activities of the Consortium and is assisted in his efforts by a Steering Committee, and Associate Directors in Industrial Collaboration & Commercialization, Education & Outreach, and Program Development.
-            </p>
-            <a href="contact.html">Learn More....</a>
+        <div class="module-row" id="modApp">
+          <div v-for="data in modData" class="module">
+            <h1><span>FESC</span>{{ data.header }}</h1>
+            <p>{{ data.para }}</p>
+            <a v-bind:href="data.page">Learn more....</a>
           </div>
         </div>
         <div>
@@ -194,5 +179,6 @@
     </div>
      <!--FESC Javascript-->
     <script src="js/script.js"></script>
+    <script src="js/vue-script.js"></script>
   </body>
 </html>
