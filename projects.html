@@ -145,13 +145,14 @@
         <h1 id="proj-spot">Project Spotlight</h1>
         <div class="module-row" id="projApp">
           <section v-for="project in projects" class="project-module">
-            <h2 class="title" id="projTitle">{{ header }}</h2>
-            <h2>{{ projLead }}</h2>
-            <p> {{ para }}</p>
+            <h2 class="title" id="projTitle">{{ project.projTitle }}</h2>
+            <h2>{{ project.projLead }}</h2>
+            <p> {{ project.desc }}</p>
             <a href="#">Click here to learn more ....</a><br />
-            <h2>Budget: $ {{ budget }}</h2>
-            <h3>Universities: {{ univs }}</h3>
-            <p>This project has been completed</p>
+            <h2>Budget: $ {{ project.budget }}</h2>
+            <h3>Universities: {{ project.univs }}</h3>
+            <p v-if="project.projComplete">This project has been completed</p>
+            <p v-else>This project is ongoing</p>
             <a href="#">Reports</a>
           </section>
         </div>
@@ -190,6 +191,6 @@
     </div>
     <!--FESC Javascript-->
     <script src="js/script.js"></script>
-    <script src="js/vue-script.js"></script>
+    <script src="js/vue-script-projects.js"></script>
   </body>
 </html>

@@ -110,7 +110,7 @@ var projData = [
     univs: "UF",
     projComplete: false,
     ProjLead: "James Klausner"
-  }
+  },
 ]
 
 // var App = new Vue({
@@ -135,5 +135,5 @@ var projApp = new Vue({
   el: "#projApp",
   data: {
     projects: projData
-  }
+  },
 })
