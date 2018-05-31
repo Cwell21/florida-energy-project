@@ -113,6 +113,26 @@ var projData = [
   },
 ]
 
+var fescContact = [
+  {
+    name: "Dr. David Norton",
+    title: "Interim Director",
+    email: "exemail@ufl.edu",
+    phone: "555-555-5555",
+    image: "images/people/Norton-225x225.jpg",
+    id: "norton"
+  },
+  {
+    name: "Ms Canan Balaban",
+    title: "Associate Director",
+    email: "exemail@ufl.edu",
+    phone: "555-555-5555",
+    image: "images/people/Balaban-225x225.jpg",
+    id: "balaban"
+  }
+]
+
+//APP to recreate university ribbon above footer.  Work on if time permits
 // var App = new Vue({
 //   el: "#univApp",
 //   data: {
@@ -136,4 +156,11 @@ var projApp = new Vue({
   data: {
     projects: projData
   },
+})
+
+var contactApp = new Vue({
+  el: "#contactApp",
+  data: {
+    contacts: fescContact
+  }
 })

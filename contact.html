@@ -22,7 +22,6 @@
     
     
     <!--Stylesheet Links-->
-    <link rel="stylesheet" href="meyer-reset.css" type="text/css">
     <link rel="stylesheet" href="styles/fesc-styles.css" type="text/css">
     
     <!-- Google Font Code-->
@@ -50,8 +49,11 @@
       return t;
       }(document, "script", "twitter-wjs"));
     </script>
-    <!--FESC Javascript-->
-    <script src="js/script.js"></script>
+    
+    <!-- VUE SCRIPT -->
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    
   </head>
   <body onload="dispUniv()">
     <!--FACEBOOK SCRIPT-->
@@ -133,29 +135,18 @@
           </figure>
         </div>
         <h1 id="member-spot">Member Spotlight</h1>
-        <div class="module-row">
-        <div class="module-contact">          
-          <figure>
-            <img id="norton" src="images/people/Norton-225x225.jpg" alt="Dr. David Norton">
-            <figcaption>
-              Dr. David Norton<br />
-              Interim Director<br />
-              Email:<a href="mailto:dpnorton@ufl.edu">dpnorton@ufl.edu</a><br />
-              Phone: 352-555-5555
-            </figcaption>
-          </figure>
-        </div>
-        <div class="module-contact">
-          <figure>
-            <img id="balaban" src="images/people/Balaban-225x225.jpg" alt="Ms. Canan Balaban">
-            <figcaption>
-              Ms. Canan “Janan” Balaban<br />
-              Associate Director<br />
-              Email: <a href="mailto:cbalaban@ufl.edu">cbalaban@ufl.edu</a><br />
-              Phone: 352-294-2027
-            </figcaption>
-          </figure>
-        </div>
+        <div class="module-row" id="contactApp">
+          <div class="module-contact" v-for="contact in contacts">          
+            <figure>
+              <img v-bind:id="contact.id" v-bind:src="contact.image" :alt="contact.name">
+              <figcaption>
+                {{ contact.name }}<br />
+                {{ contact.title }}<br />
+                Email:<a v-bind:href="contact.email">{{ contact.email }}</a><br />
+                {{ contact.phone }}
+              </figcaption>
+            </figure>
+          </div>
         </div>
         <div>
           <ul id="partUniv">           
@@ -189,5 +180,8 @@
         </section>
       </footer>
     </div>
+    <!--FESC Javascript-->
+    <script src="js/script.js"></script>
+    <script src="js/vue-script.js"></script>
   </body>
 </html>
