@@ -5,33 +5,32 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Enter meta data for Social Media Shares-->
-    
+
     <!--TWITTER-->
     <meta name="twitter:title" content="Florida Energy Systems Consortium">
     <meta name="twitter:description" content="FESC Bringing Energy Solutions to Florida, the Nation and the World">
     <meta name="twitter:image" content="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/header_logo.png">
     <meta name="twitter:card" content="summary">
-    
+
     <!--FACEBOOK-->
     <meta property="og:title" content="Florida Energy Systems Consortium">
     <meta property="og:description" content="FESC Bringing Energy SOlutions to Florida, the Nation and the World">
     <meta property="og:image" content="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/header_logo.png">
     <meta property="og:url" content="https://cwell21.github.io/florida-energy-project">
     <meta property="og:type" content="website">
-    
-    
-    
+
+
+
     <!--Stylesheet Links-->
-    <link rel="stylesheet" href="meyer-reset.css" type="text/css">
     <link rel="stylesheet" href="styles/fesc-styles.css" type="text/css">
-    
+
     <!-- Google Font Code-->
     <link href="https://fonts.googleapis.com/css?family=Concert+One|Courgette" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-    
+
     <!--Font Awesome Code-->
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
-    
+
       <!--TWITTER SCRIPT-->
      <script>
       window.twttr = (function(d, s, id) {
@@ -51,8 +50,9 @@
       return t;
       }(document, "script", "twitter-wjs"));
     </script>
-    <!--FESC Javascript-->
-    <script src="js/script.js"></script>
+    <!-- VUE SCRIPT -->
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
   <body onload="dispUniv()">
     <!--FACEBOOK SCRIPT-->
@@ -65,7 +65,7 @@
         fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
       </script>
-    
+
     <div class="main-wrapper">
      <div class="banner">
         <img id="logo" src="images/fescLogo.png" alt="FESC Logo">
@@ -76,7 +76,7 @@
         <div id="social-links">
           <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
           <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-          <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>    
+          <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
         </div>
       </div>
        <div class="header-nav">
@@ -98,7 +98,7 @@
             <li><a href="contact.html">Contact</a></li>
             <li class="dropdown" onclick="dispMenu('data')">
               <a class="dropbtn">Data</a>
-              <div class="dropdown-content" id="data">  
+              <div class="dropdown-content" id="data">
                 <a href="data.html">Production</a>
                 <a href="#">T.B.D.</a>
                 <a href="#">T.B.D.</a>
@@ -106,13 +106,13 @@
             </li>
             <li class="dropdown">
               <a class="dropbtn" onclick="dispMenu('tbd2')">T.B.D.</a>
-              <div class="dropdown-content" id="tbd2">  
+              <div class="dropdown-content" id="tbd2">
                 <a href="#">T.B.D.</a>
                 <a href="#">T.B.D.</a>
                 <a href="#">T.B.D.</a>
               </div>
             </li>
-          </ul>             
+          </ul>
         </nav>
       </div>
       <div class="main-content">
@@ -143,54 +143,24 @@
           </ul>
         </section>
         <h1 id="proj-spot">Project Spotlight</h1>
-        <div class="module-row">
-          <section class="project-module">
-            <h2 class="title">Solar Systems Testing Facility</h2>
-            <h2>PI: James Roland, David Block</h2>
-            <p>
-              Description: Over the past 5 years, the Florida Solar Energy Center (FSEC) has received a significant increase in demand for solar thermal and PV testing and certification. This occurrence has resulted in requiring the Center to correspondingly amplify its capabilities to respond to the increased demand. Thus, the objective of this task was to construct a solar thermal and PV systems testing facility. This facility was built by adding walls, windows, doors and air conditioning to an existing roof only facility at the FSEC site. This new facility provides laboratory space for testing of solar water heating components and systems and PV modules and inverters. At this time, the facility is completed and this is the final report for the project.
-            </p>
+        <div class="module-row" id="projApp">
+          <section v-for="project in projects" class="project-module">
+            <h2 class="title" id="projTitle">{{ header }}</h2>
+            <h2>{{ projLead }}</h2>
+            <p> {{ para }}</p>
             <a href="#">Click here to learn more ....</a><br />
-            <h2>Budget: $600,609</h2>
-            <h3>Universities: UCF/FSEC</h3>
-            <p>This project has been completed</p>
-            <a href="#">Reports</a>
-          </section>
-          <section class="project-module">
-            <h2 class="title">Development of Novel Water Splitting Catalysts for the Production of Renewable Hydrogen</h2>
-            <h2>PI: Helena Hagelin-Weaver</h2>
-            <p>
-              Description: This project focuses on the development of iron-based catalysts for the thermochemical splitting of water into hydrogen and oxygen. The thermochemical process of splitting water is particularly well-suited for the utilization of solar energy to provide the heat for the reaction and is a way to produce a renewable hydrogen fuel. As hydrogen is difficult to transport and store, producing hydrogen on site for power plants using proton exchange membrane (PEM) fuel cells or internal combustion engines to generate electricity or for the production of chemicals, such as liquid hydrocarbon fuels, is a very attractive approach.
-            </p>
-              <a href="#">Click here to learn more ....</a><br />
-              
-<!--  MORE CONTENT IF NEEDED            The project uses a two-step process in which water is passed over a reduced iron oxide to generate hydrogen while the oxygen is taken up by the oxygen-deficient iron oxide (Step 1: FeOx-1 + H2O -> FeOx + H2). In the second step the resulting iron oxide is heated to desorb oxygen and regenerate the oxygen-deficient iron oxide to close the catalytic cycle (Step 2: FeOx -> FeOx-1 + ½O2). The main objectives of the project are to develop mixed metal oxide catalysts that 1) will release oxygen at temperatures lower than 1500°C (Step 2), while still maintaining water-splitting activity (Step 1) and 2) are stable up to the temperature necessary for the oxygen desorption step.-->
-            <h2>Budget: $100,000</h2>
-            <h3>Universities: UF</h3>
-            <p>This project has been completed</p>
-            <a href="#">Reports</a><br />
-          </section>
-          <section class="project-module">
-            <header>Clean Drinking Water</header>
-            <h2>Title: Low Cost Solar Driven Desalination</h2>
-            <h2>PI: James Klausner</h2>
-            <p>
-              Description: Water and energy scarcity poses a future threat to human activity and societal development around the world. The state of Florida is vulnerable to fresh water shortages. Florida ground water is contaminated in many locations from leaky underground tanks, agricultural pesticides, and other chemicals. Although it is possible to desalinate sea water, conventional systems are energy intensive. Solar energy utilization for desalination systems is being investigated to provide adequate fresh water for the state’s needs. Solar diffusion driven desalination (DDD) system has been developed for both bulk water desalination and small community needs/disaster response. The research objective is to examine the best operating condition for the solar diffusion driven desalination (DDD) process using a computer models developed for the transient evaporation and condensation processes. 
-            </p>
-            <a href="#">Click here to learn more ....</a><br />
-<!--  MORE CONTENT IF NEEDED     The outcome of the study is the development of cost effective, low power consumption, and low maintenance desalination process that is powered by solar energy. Several operating modes for the solar DDD process have been investigated, and the best operating mode is used to design a small scale distillation unit. In addition, one of the main operational difficulties encountered in thermal distillation processes is the cooling requirement. Cooling is needed to reduce the condensing water temperature in the condenser to increase water production. In this study, the external cooling requirement has been tackled with a unique operating mode.-->
-            <h2>Budget: $252,000</h2>
-            <h3>Universities: UF</h3>
+            <h2>Budget: $ {{ budget }}</h2>
+            <h3>Universities: {{ univs }}</h3>
             <p>This project has been completed</p>
             <a href="#">Reports</a>
           </section>
         </div>
         <div>
-          <ul id="partUniv">           
-          </ul>                  
+          <ul id="partUniv">
+          </ul>
         </div>
       </div>
-      
+
       <footer>
         <section>
           <h4>Share Us:</h4>
@@ -206,17 +176,20 @@
             272 Grinter Hall
             P.O. Box 115500
             Gainesville, FL 32611-5500
-          </address>          
+          </address>
         </section>
         <section>
           <h4>Connect with Us:</h4>
           <div id="social-links-bottom">
             <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
             <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-            <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a> 
+            <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
           </div>
         </section>
       </footer>
     </div>
+    <!--FESC Javascript-->
+    <script src="js/script.js"></script>
+    <script src="js/vue-script.js"></script>
   </body>
 </html>
