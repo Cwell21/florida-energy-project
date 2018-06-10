@@ -9,3 +9,21 @@ comparison of the given data.  The charts do a good job of showing the use and g
 https://developers.google.com/chart/interactive/docs/gallery/linechart#configuration-options
 
 https://developers.google.com/chart/interactive/docs/gallery/barchart 
+
+Use of US Energy Information Administration API
+
+Energy Consumption
+
+API Documentation:
+https://www.eia.gov/opendata/commands.php 
+
+
+Florida data:
+https://www.eia.gov/opendata/qb.php?category=40236&sdid=SEDS.TETCB.FL.A 
+
+
+Energy Production
+
+Florida data:
+https://www.eia.gov/opendata/qb.php?category=40426&sdid=SEDS.REPRB.FL.A
+
