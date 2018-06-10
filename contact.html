@@ -5,31 +5,31 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Enter meta data for Social Media Shares-->
-    
+
     <!--TWITTER-->
     <meta name="twitter:title" content="Florida Energy Systems Consortium">
     <meta name="twitter:description" content="FESC Bringing Energy Solutions to Florida, the Nation and the World">
     <meta name="twitter:image" content="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/header_logo.png">
     <meta name="twitter:card" content="summary">
-    
+
     <!--FACEBOOK-->
     <meta property="og:title" content="Florida Energy Systems Consortium">
     <meta property="og:description" content="FESC Bringing Energy SOlutions to Florida, the Nation and the World">
     <meta property="og:image" content="http://floridaenergy.ufl.edu/wp-content/themes/fesc/images/header_logo.png">
     <meta property="og:url" content="https://cwell21.github.io/florida-energy-project">
     <meta property="og:type" content="website">
-    
-    
-    
+
+
+
     <!--Stylesheet Links-->
     <link rel="stylesheet" href="styles/fesc-styles.css" type="text/css">
-    
+
     <!-- Google Font Code-->
     <link href="https://fonts.googleapis.com/css?family=Concert+One|Courgette" rel="stylesheet">
-    
+
     <!--Font Awesome Code-->
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
-    
+
     <!--TWITTER SCRIPT-->
     <script>
       window.twttr = (function(d, s, id) {
@@ -49,11 +49,11 @@
       return t;
       }(document, "script", "twitter-wjs"));
     </script>
-    
+
     <!-- VUE SCRIPT -->
     <!-- development version, includes helpful console warnings -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    
+
   </head>
   <body onload="dispUniv()">
     <!--FACEBOOK SCRIPT-->
@@ -66,7 +66,7 @@
         fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
       </script>
-    
+
     <div class="main-wrapper">
       <div class="banner">
         <img id="logo" src="images/fescLogo.png" alt="FESC Logo">
@@ -77,7 +77,7 @@
         <div id="social-links">
           <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
           <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-          <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>       
+          <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
         </div>
       </div>
       <div class="header-nav">
@@ -99,7 +99,7 @@
             <li><a href="contact.html">Contact</a></li>
             <li class="dropdown" onclick="dispMenu('data')">
               <a class="dropbtn">Data</a>
-              <div class="dropdown-content" id="data">  
+              <div class="dropdown-content" id="data">
                 <a href="data.html">Production</a>
                 <a href="#">T.B.D.</a>
                 <a href="#">T.B.D.</a>
@@ -107,13 +107,13 @@
             </li>
             <li class="dropdown">
               <a class="dropbtn" onclick="dispMenu('tbd2')">T.B.D.</a>
-              <div class="dropdown-content" id="tbd2">  
+              <div class="dropdown-content" id="tbd2">
                 <a href="#">T.B.D.</a>
                 <a href="#">T.B.D.</a>
                 <a href="#">T.B.D.</a>
               </div>
             </li>
-          </ul>             
+          </ul>
         </nav>
       </div>
       <div class="main-content">
@@ -124,7 +124,7 @@
               Telephone: 352-294-2027<br />
               272 Grinter Hall<br />
               P.O. Box 115500<br />
-              Gainesville, FL 32611-5500        
+              Gainesville, FL 32611-5500
             </address>
           </div>
           <figure>
@@ -136,7 +136,7 @@
         </div>
         <h1 id="member-spot">Member Spotlight</h1>
         <div class="module-row" id="contactApp">
-          <div class="module-contact" v-for="contact in contacts">          
+          <div class="module-contact" v-for="contact in contacts">
             <figure>
               <img v-bind:id="contact.id" v-bind:src="contact.image" :alt="contact.name">
               <figcaption>
@@ -149,8 +149,8 @@
           </div>
         </div>
         <div>
-          <ul id="partUniv">           
-          </ul>                  
+          <ul id="partUniv">
+          </ul>
         </div>
       </div>
       <footer>
@@ -168,20 +168,20 @@
             272 Grinter Hall
             P.O. Box 115500
             Gainesville, FL 32611-5500
-          </address>          
+          </address>
         </section>
         <section>
           <h4>Connect with Us:</h4>
           <div id="social-links-bottom">
             <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
             <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-            <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a> 
+            <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
           </div>
         </section>
       </footer>
     </div>
     <!--FESC Javascript-->
     <script src="js/script.js"></script>
-    <script src="js/vue-script.js"></script>
+    <script src="js/vue-script-contact.js"></script>
   </body>
 </html>
