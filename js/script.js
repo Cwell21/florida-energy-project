@@ -41,13 +41,11 @@ function dispMenu(y) {
   }
 }
 
-
 function fescLoad(){
 
   dispUniv();
-
 }
 
-// window.addEventListener("resize", function() {
-//   fescLoad();
-// });
+window.addEventListener("resize", function() {
+  fescLoad();
+});

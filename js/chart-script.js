@@ -2,15 +2,16 @@
 
 //GOOGLE CHARTS SCRIPT
 
-function dispLineChart(){
+function dispChart(){
 
   let w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
   let chartW = 800;
   let chartH = 600;
 
   if (w < 981){
-    chartW = 225;
+    chartW = 275;
     chartH = 500;
+    fontSize = 8;
   }
   let chartSize = [chartW, chartH];
   console.log("Chart Parameters : " + chartSize[0] + " x " + chartSize[1]);
@@ -25,7 +26,7 @@ google.charts.setOnLoadCallback(getData);
 
 function drawLineChart(newData) {
 
-    let displaySize = dispLineChart();
+    let displaySize = dispChart();
 
     newData.unshift(["Year", "Energy Consumption"])
 
@@ -100,21 +101,9 @@ function getData(){
   request.send()
 }
 
-// function dispBarChart() {
-//
-//   var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-//   var chartW = chartW;
-//   var chartH = chartH;
-//
-//   if (w < 981){
-//     chartW = 265;
-//     chartH = 500;
-//   }
-//}
-
-
 function drawBarChart(newData) {
 
+  let displaySize = dispChart();
 //    let decChange = {'2010': 10674, '2000': 28566, '1990': 5128, '1980': 142212, '1970': 18384, '1960': 15809};
   let barColor = "rgb(250,20,0)";
 
@@ -131,12 +120,12 @@ function drawBarChart(newData) {
 
   var options = {
     title: "Florida Growth of RE Production",
-    width: 800,
-    height: 600,
+    width: displaySize[0],
+    height: displaySize[1],
     bar: {groupWidth: "95%"},
     legend: { position: "none" },
     backgroundColor: 'rgb(215,215,215)',
-    fontSize: 14,
+    fontSize: displaySize[2],
     vAxis: {
       title: 'Year',
     },
