@@ -19,10 +19,9 @@ function dispLineChart(){
 
 //google charts for line graph - Energy Consumption
 google.charts.load('current', {'packages':['corechart']});
+
 //Add new callback function
 google.charts.setOnLoadCallback(getData);
-
-
 
 function drawLineChart(newData) {
 
@@ -55,7 +54,9 @@ function drawLineChart(newData) {
   //google charts for bar graph - Energy Production
   google.charts.load("current", {packages:["corechart"]});
 
+  //sett callback for bar graph data.
   google.charts.setOnLoadCallback(getDataBar);
+
 function getDataBar(){
   //create new request object
   let request = new XMLHttpRequest()
@@ -112,38 +113,43 @@ function getData(){
 //}
 
 
-      function drawBarChart(newData) {
+function drawBarChart(newData) {
 
-    //    let decChange = {'2010': 10674, '2000': 28566, '1990': 5128, '1980': 142212, '1970': 18384, '1960': 15809};
-        let barColor = "rgb(250,20,0)";
+//    let decChange = {'2010': 10674, '2000': 28566, '1990': 5128, '1980': 142212, '1970': 18384, '1960': 15809};
+  let barColor = "rgb(250,20,0)";
 
-      newData.unshift(["Year", "Energy Production"])
-        var data = google.visualization.arrayToDataTable(newData);
+  newData.unshift(["Year", "Energy Production"])
+  var data = google.visualization.arrayToDataTable(newData);
 
-        var view = new google.visualization.DataView(data);
-        view.setColumns([0, 1,
-                         { calc: "stringify",
-                           sourceColumn: 1,
-                           type: "string",
-                           role: "annotation" },
-                       ]);
+  var view = new google.visualization.DataView(data);
+  view.setColumns([0, 1,
+                   { calc: "stringify",
+                     sourceColumn: 1,
+                     type: "string",
+                     role: "annotation" },
+                 ]);
 
-        var options = {
-          title: "Florida Growth of RE Production vs Growth of Energy Consumption by Decade",
-          width: 800,
-          height: 600,
-          bar: {groupWidth: "95%"},
-          legend: { position: "none" },
-          backgroundColor: 'rgb(215,215,215)',
-          fontSize: 18,
-          vAxis: {
-            title: 'Decade',
-          },
-          hAxis: {
-            title: 'Billion/BTU',
-          },
+  var options = {
+    title: "Florida Growth of RE Production",
+    width: 800,
+    height: 600,
+    bar: {groupWidth: "95%"},
+    legend: { position: "none" },
+    backgroundColor: 'rgb(215,215,215)',
+    fontSize: 14,
+    vAxis: {
+      title: 'Year',
+    },
+    hAxis: {
+      title: 'Billion/BTU',
+    },
+    annotations: {
+      textStyle: {
+        fontSize: .01,
+      },
+    },
 
-        };
-        var chart = new google.visualization.BarChart(document.getElementById("bar_chart"));
-        chart.draw(view, options);
-    }
+  };
+  var chart = new google.visualization.BarChart(document.getElementById("bar_chart"));
+  chart.draw(view, options);
+}
